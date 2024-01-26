@@ -1,0 +1,80 @@
+
+html {
+  --s: 140px;
+  
+  --_g: #0000 52%,#170409 54% 57%,#0000 59%; 
+  background: 
+    radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+    radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+    radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%,var(--_g)), #67917A;
+  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+}
+
+body {
+    background-color: #1e3978c3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .calculator {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  #display {
+    width: calc(100% - 20px); /* Ajusta el ancho del input y el margen */
+    padding: 10px;
+    font-size: 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Botones especiales (puedes agregar más según sea necesario) */
+  button.operator {
+    background-color: #ff9800;
+    color: #000;
+  }
+  
+  button.equal {
+    background-color: #4caf50;
+    color: #000;
+  }
+  
+  button.clear {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
